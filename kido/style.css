@@ -118,7 +118,7 @@ button:nth-child(6) {
 
 .add-cart:hover {
   color: #000;
-  background-color: #fff;
+  background-color: #fff !important;
   text-decoration: dashed;
   border-top: 2px black solid;
 }
@@ -133,7 +133,7 @@ img {
 }
 .product-detail {
   float: right;
-  width: 28%;
+  width: 29%;
   padding: 15px 10px;
   height: 250px;
 }
