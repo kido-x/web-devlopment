@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -25,6 +26,19 @@ p {
   background-color: #f7f7f7;
   margin: 0;
   padding: 15px 0;
+  position: relative;
+}
+.product-title::before {
+  content: "sale";
+  display: inline-block;
+  background-color: red;
+  padding: 10px 20px;
+  color: white;
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
 /* PRODUCT INFORMATION */
@@ -57,7 +71,34 @@ p {
   text-transform: uppercase;
   font-size: 16px;
 }
-
+.color-choose {
+  margin: 20px 0;
+}
+div button {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+button:first-child {
+  margin-left: 0;
+  background-color: black;
+}
+button:nth-child(2) {
+  background-color: blue;
+}
+button:nth-child(3) {
+  background-color: red;
+}
+button:nth-child(4) {
+  background-color: orange;
+}
+button:nth-child(5) {
+  background-color: green;
+}
+button:nth-child(6) {
+  background-color: rgb(117, 52, 14);
+}
 .details-list {
   list-style: square;
   margin: 15px 25px;
@@ -65,7 +106,7 @@ p {
 
 /* BUTTON */
 .add-cart {
-  background-color: #000;
+  background-color: #000 !important;
   border: none;
   color: #fff;
   font-size: 20px;
@@ -80,4 +121,29 @@ p {
   background-color: #fff;
   text-decoration: dashed;
   border-top: 2px black solid;
+}
+img {
+  float: left;
+}
+.second {
+  width: 40%;
+  float: left;
+  padding: 15px 30px;
+  height: 250px;
+}
+.product-detail {
+  float: right;
+  width: 28%;
+  padding: 15px 10px;
+  height: 250px;
+}
+.price {
+  float: left;
+}
+.shipping {
+  float: right;
+  margin-top: 10px;
+}
+.description {
+  clear: both;
 }
