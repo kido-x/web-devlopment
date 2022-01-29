@@ -15,9 +15,6 @@ body {
   margin: 50px auto;
   width: 825px;
 }
-p {
-  margin-bottom: 15px;
-}
 
 .product-title {
   text-align: center;
@@ -44,14 +41,15 @@ p {
 /* PRODUCT INFORMATION */
 .price {
   font-size: 24px;
+  /* background-color: #000; */
 }
 
 .shipping {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
-  color: #777;
-  margin-top: -15px;
+  color: #000;
+  /* margin-top: -15px; */
 }
 
 .more-info:visited {
@@ -72,36 +70,70 @@ p {
   font-size: 16px;
 }
 .color-choose {
-  margin: 20px 0;
+  /* margin: 20px 0; */
+  display: flex;
+
+  justify-content: flex-start;
+  gap: 20px;
+  flex-basis: 15px;
+  align-items: stretch;
+
+  /* flex-direction: ; */
 }
-div button {
+/* div button {
   padding: 10px;
   margin: 10px;
   border: none;
+  cursor: pointer; */
+
+.first {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border: none;
   cursor: pointer;
 }
-button:first-child {
-  margin-left: 0;
-  background-color: black;
-}
-button:nth-child(2) {
+div button:nth-child(2) {
   background-color: blue;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
 }
-button:nth-child(3) {
+div button:nth-child(3) {
   background-color: red;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
 }
-button:nth-child(4) {
+div button:nth-child(4) {
   background-color: orange;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
 }
-button:nth-child(5) {
+div button:nth-child(5) {
   background-color: green;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
 }
-button:nth-child(6) {
+div button:nth-child(6) {
   background-color: rgb(117, 52, 14);
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
 }
 .details-list {
   list-style: square;
-  margin: 15px 25px;
+  margin-left: 20px;
+  font-size: 18px;
+
+  /* margin: 15px 25px; */
 }
 
 /* BUTTON */
@@ -122,22 +154,60 @@ button:nth-child(6) {
   text-decoration: dashed;
   border-top: 2px black solid;
 }
-img {
-  float: left;
+.product-main {
+  /* flex-wrap: wrap; */
+  display: flex;
+  gap: 20px;
 }
 .second {
+  /* flex-shrink: 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* flex-basis: 500px; */
+  /* flex-grow: 1; */
+  /* writing-mode: vertical-; */
+  flex: 1;
+
+  /* flex-wrap: wrap;
+  align-content: center; */
+}
+.product-main-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-detail {
+  /* flex-basis: 1600px; */
+  /* flex-grow: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  flex: 1;
+  gap: 20px;
+}
+.details-title {
+  /* margin-top: 15px; */
+  margin-top: 25px;
+}
+/* img {
+  float: left;
+} */
+/* .second {
   width: 40%;
   float: left;
   padding: 15px 30px;
   height: 250px;
-}
-.product-detail {
+} */
+/* .product-detail {
   float: right;
   width: 29%;
   padding: 15px 10px;
   height: 250px;
-}
-.price {
+} */
+/* float */
+/* .price {
   float: left;
 }
 .shipping {
@@ -146,4 +216,4 @@ img {
 }
 .description {
   clear: both;
-}
+} */
