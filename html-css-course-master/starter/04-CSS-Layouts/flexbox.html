@@ -14,7 +14,7 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
+        height: 200px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -38,8 +38,35 @@
         background-color: #ddd;
         font-size: 40px;
         margin: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        /* flex-direction: ; */
 
         /* FLEXBOX */
+      }
+      .el {
+        /* flex-shrink: 0;
+        flex-basis: 150px; */
+        flex: 1 0 150px;
+      }
+      .el--1 {
+        /* flex-grow: 1; */
+        align-self: flex-start;
+        /* flex-basis: 350px; */
+        /* flex-shrink: 0; */
+      }
+      .el--5 {
+        /* flex-grow: 2; */
+        align-self: stretch;
+        order: 2;
+      }
+      .el--6 {
+        order: -1;
+      }
+      .el--7 {
+        /* order: -2; */
       }
     </style>
   </head>
@@ -49,7 +76,7 @@
       <div class="el el--2">and</div>
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
-      <div class="el el--5">amazing</div>
+      <div class="el el--5">HTML</div>
       <div class="el el--6">languages</div>
       <div class="el el--7">to</div>
       <div class="el el--8">learn</div>
