@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": "..\\..\\.."
+    }
+  ],
+  "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggest.showStatusBar": true,
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+      "vue-html": "html",
+      "plaintext": "pug",
+      "razor": "html"
+    },
+    "editor.tabSize": 2,
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 20,
+    "editor.wordWrap": "on"
+  }
+}
